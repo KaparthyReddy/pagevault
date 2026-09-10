@@ -28,7 +28,7 @@ public class Main {
         List<MemoryReference> randomWorkload = generator.generateRandom(SEQUENCE_LENGTH, ADDRESS_SPACE_SIZE);
         List<MemoryReference> sequentialWorkload = generator.generateSequential(SEQUENCE_LENGTH, ADDRESS_SPACE_SIZE);
         List<MemoryReference> localityWorkload = generator.generateLocalityPattern(
-                SEQUENCE_LENGTH, ADDRESS_SPACE_SIZE, /* workingSetSize */ 4, /* burstLength */ 15
+                SEQUENCE_LENGTH, ADDRESS_SPACE_SIZE, /* workingSetSize */ 6, /* burstLength */ 15
         );
 
         runComparison("Random Access", randomWorkload);
